@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="storyline.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <title>Colorful Tale</title>
+</head>
+<body>
+    <div class="main">
+        <div class="sound-container"> </div>
+        <div class="container">
+            <p>Through the years, The seven colors lived in harmony, generating light to the realm<br></p>
+            <p>until light howlers appeared and held the colors captive.<br><br></p>
+            
+            <p>All hope was lost until... the transparent was born.<br></p>
+            <p>The prophecies spoke of a warrior that is colorless. Only him can fight against the will of the howlers and ignite the light of the seven colors.<br><br></p>
+            
+            <p>"When the Colors fade away, and darkness clears all sight</p>
+            <p>Rises a different one, to bring back the light"</p>
+        </div> 
+        
+        <img src="./assets/bonfire.gif" alt="bonfire"/>
+
+        <a class="toGame" href="game.html">&rarr;</a>
+
+
+    </div>
+    
+</body>
+
+<script>
+    audioPlaying = false;
+    hoverAudio = new Audio("./assets/s2.mp3");
+    soundtrack = new Audio("./assets/soundtrack.mp3");
+    soundDiv = document.querySelector(".sound-container")
+    soundDiv.innerHTML = (audioPlaying)? '🔈':'🔇';
+
+    soundDiv.addEventListener("click", ()=>{
+        if(audioPlaying){
+            soundDiv.innerHTML = "🔇";
+            soundtrack.pause();
+        }
+        else {
+            soundDiv.innerHTML = "🔈";
+            soundtrack.play();
+        }
+        audioPlaying = !audioPlaying;
+        
+    })
+
+    document.querySelector(".toGame").addEventListener("mouseover", () => {
+    hoverAudio.play();
+  });
+</script>
+</html>

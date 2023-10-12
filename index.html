@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <title>The Quest of Light</title>
+</head>
+<body>
+
+    <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+
+    <div class="title">
+        The Quest of Light <br>
+        <div class="story">Click to begin</a>
+    </div>
+
+  
+    <div class="glowing">
+      
+      <span style="--i:1;"></span>
+      
+      <span style="--i:2;"></span>
+      
+      <span style="--i:3;"></span>
+      
+    </div>
+    
+    <div class="glowing">
+      
+      <span style="--i:1;"></span>
+      
+      <span style="--i:2;"></span>
+      
+      <span style="--i:3;"></span>
+      
+    </div>
+    
+    <div class="glowing">
+      
+      <span style="--i:1;"></span>
+      
+      <span style="--i:2;"></span>
+      
+      <span style="--i:3;"></span>
+      
+    </div>
+    
+    <div class="glowing">
+      
+      <span style="--i:1;"></span>
+      
+      <span style="--i:2;"></span>
+      
+      <span style="--i:3;"></span>
+      
+    </div>
+    
+  </body>
+
+  <script>
+    audio = new Audio("./assets/s2.mp3");
+
+    document.querySelector(".story").addEventListener("click", function() {
+    window.location.href = "storyline.html";
+  });
+
+  document.querySelector(".story").addEventListener("mouseover", () => {
+    audio.play();
+  });
+
+
+  </script>
+</html>

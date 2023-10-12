@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="game.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <title>game</title>
+  </head>
+
+  <body>
+    <div class="dots" style="align-items: center;">
+        Unlocked Colors: 
+      <span class="dot" id="dot1"></span>
+      <span class="dot" id="dot2"></span>
+      <span class="dot" id="dot3"></span>
+      <span class="dot" id="dot4"></span>
+      <span class="dot" id="dot5"></span>
+      <span class="dot" id="dot6"></span>
+      <span class="dot" id="dot7"></span>
+    </div>
+
+    <div class="sound-container"></div>
+
+    
+
+    <div class="main-container">
+        <div style="display: flex; align-items: center;">
+            <p>Health</p>
+            <div class="health-box" id="health1"></div>
+            <div class="health-box" id="health2"></div>
+            <div class="health-box" id="health3"></div>
+        </div>
+        <div class="game-container">
+            <img src="./assets/clouds.gif" class="clouds" />
+            <div class="player"></div>
+            <img class="howler" src="./assets/howler.gif" />
+            <div class="ground"></div>
+          </div>
+    </div>
+
+    
+    <div class="info">
+      <p>Arrows - for Movement</p>
+      <p>
+        Hints: <br>
+        It is Said That each Howler Can Withtake Different Number of Hits, and Has a Different Speed <br> 
+        If You Touch the Howlers, Their Telepathic Powers Will Move You Away and Disrupt Your Movement<br> 
+        The Prophecy says that the transparent one has a strong bottom
+        <br>Each Of The Howlers Holds one Color Captive
+        <br>Smash the Howlers and Free the Locked Color
+      </p>
+    </div>
+  </body>
+
+  <script src="./js/game.js" type="module"></script>
+  
+</html>
