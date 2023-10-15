@@ -58,6 +58,7 @@ body{
 .info{
     font-size: larger;
     text-align: center;
+    margin-bottom: -20px;
 }
 
 .dots {
