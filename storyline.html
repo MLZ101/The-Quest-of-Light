@@ -10,24 +10,24 @@
     <title>Colorful Tale</title>
 </head>
 <body>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;" >
     <div class="main">
         <div class="sound-container"> </div>
         <div class="container">
-            <p>Through the years, The seven colors lived in harmony, generating light to the realm<br></p>
-            <p>until light howlers appeared and held the colors captive.<br><br></p>
+            <p style="margin-top: 1vh;">Through the years, The seven colors lived in harmony, generating light to the realm<br></p>
+            <p>until light howlers appeared and held the colors captive.<br></p>
             
             <p>All hope was lost until... the transparent was born.<br></p>
-            <p>The prophecies spoke of a warrior that is colorless. Only him can fight against the will of the howlers and ignite the light of the seven colors.<br><br></p>
+            <p>The prophecies spoke of a warrior that is colorless. Only him can fight against the will of the howlers and ignite the light of the seven colors.<br></p>
             
             <p>"When the Colors fade away, and darkness clears all sight</p>
-            <p>Rises a different one, to bring back the light"</p>
+            <p style="margin-bottom: 1vh;">Rises a different one, to bring back the light"</p>
         </div> 
-        
-        <img src="./assets/bonfire.gif" alt="bonfire"/>
 
-        <a class="toGame" href="game.html">&rarr;</a>
-
-
+        <a class="to-game" href="game.html">&rarr;</a>
+    </div>
+    
+    <img src="./assets/bonfire.gif" alt="bonfire" style="margin-top: 2vh;"/>
     </div>
     
 </body>
@@ -38,6 +38,9 @@
     soundtrack = new Audio("./assets/soundtrack.mp3");
     soundDiv = document.querySelector(".sound-container")
     soundDiv.innerHTML = (audioPlaying)? '🔈':'🔇';
+    soundDiv.style.border = "solid white";
+    soundDiv.style.borderRadius = "10px";
+    
 
     soundDiv.addEventListener("click", ()=>{
         if(audioPlaying){

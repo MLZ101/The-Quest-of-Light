@@ -12,8 +12,9 @@ body {
 
 .main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 img{
@@ -23,20 +24,31 @@ img{
 .container {
     color: #111111;
     font-weight: bold;
-    max-width: 400px;
     background: url("./assets/scroll.png");
-    background-size: contain;
-    background-repeat: no-repeat; 
+    background-size:cover;
     background-position: center;
-    padding: 110px;
-    border-radius: 8px;
+    padding: 11%; 
 }
 
+
 .container p {
-    margin: 0 0 10px 0;
     opacity: 0;
     animation: fadeIn 3s forwards;
+    font-size: 2vh; 
 }
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px; 
+    }
+
+    .container p {
+        font-size: 4vw; 
+    }
+}
+
 
 .container p:nth-child(1) {
     animation-delay: 1s;
@@ -55,11 +67,11 @@ img{
 }
 
 .container p:nth-child(5) {
-    animation-delay: 15s;
+    animation-delay: 10s;
 }
 
 .container p:nth-child(6){
-    animation-delay: 19s;
+    animation-delay: 15s;
 }
 
 @keyframes fadeIn {
@@ -84,6 +96,13 @@ a{
     border-radius: 5px;
 }
 
+.to-game{
+    background-color: white;
+    border: solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
 a:hover{
     background-color: orange;
 }
@@ -91,4 +110,9 @@ a:hover{
 .sound-container{
     cursor: pointer;
     font-size: xx-large;
+}
+
+.sound-container:hover{
+    background-color: orange;
+    margin: 5px;
 }
